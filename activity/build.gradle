@@ -46,8 +46,6 @@ compileKotlin {
 
 idea {
     module {
-        sourceDirs += file("build/generated/source/kapt/main")
-        generatedSourceDirs += file("build/generated/source/kapt/main")
         downloadJavadoc = true
         downloadSources = true
     }

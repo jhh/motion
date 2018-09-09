@@ -8,6 +8,7 @@ fun main(args: Array<String>) {
     val wheelList = listOf("colson", "magic")
     val directionList = listOf("forward", "reverse", "left", "right")
 
+    // milliseconds, profile_acceleration, profile_velocity, profile_position, actual_position
     activity.data.add(listOf(1, 0, 0, 0, 0))
     activity.data.add(listOf(2, 24, 2400, 120000, 0))
     activity.data.add(listOf(3, 120, 7200, 240000, 0))

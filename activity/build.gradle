@@ -48,5 +48,8 @@ idea {
     module {
         downloadJavadoc = true
         downloadSources = true
+        sourceDirs += files('build/generated/source/kapt/main', 'build/generated/source/kaptKotlin/main')
+        generatedSourceDirs += files('build/generated/source/kapt/main', 'build/generated/source/kaptKotlin/main')
+
     }
 }

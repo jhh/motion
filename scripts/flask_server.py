@@ -13,8 +13,8 @@ RETURNING id
 data_sql = """
 INSERT INTO motion_activity_data(motion_activity_id, milliseconds,
     profile_acceleration, profile_velocity, profile_ticks,
-    actual_ticks, forward, strafe, azimuth)
-VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s)
+    actual_velocity, actual_ticks, forward, strafe, azimuth)
+VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
 """
 
 db = connect(database="jeff", user="jeff")

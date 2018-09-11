@@ -130,8 +130,10 @@ fun main(args: Array<String>) {
     activity.data.add(listOf(2380.0, -240000.0, 2400.0, 251976.0, 242796.0, 0.006, 0.0, 0.0))
     activity.data.add(listOf(2400.0, -120000.0, 0.0, 252000.0, 243829.0, 0.0, 0.0, 0.0))
 
+    val tags = mutableListOf("jif", wheelList.shuffled().first())
+    activity.meta["tags"] = tags
+
     activity.meta["direction"] = directionList.shuffled().first()
-    activity.meta["wheel"] = wheelList.shuffled().first()
     activity.meta["azimuth"] = 0.0
     activity.meta["dt"] = 20
     activity.meta["t1"] = 200

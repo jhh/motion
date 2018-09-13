@@ -5,16 +5,14 @@ import json
 app = Flask(__name__)
 
 activity_sql = """
-INSERT INTO motion_activity(name, profile_ticks, actual_ticks, actual_distance, meta)
-VALUES (%s,%s, %s, %s, %s)
+INSERT INTO tc_activity(name, activity_measures, data, trace_measures,  meta)
+VALUES (%s, %s, %s, %s, %s)
 RETURNING id
 """
 
 data_sql = """
-INSERT INTO motion_activity_data(motion_activity_id, milliseconds,
-    profile_acceleration, profile_velocity, profile_ticks,
-    actual_velocity, actual_ticks, forward, strafe, azimuth)
-VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
+INSERT INTO tc_trace(activity_id, millis, data)
+VALUES (%s, %s, %s)
 """
 
 db = connect(database="jeff", user="jeff")
@@ -23,22 +21,23 @@ db = connect(database="jeff", user="jeff")
 @app.route("/load", methods=["POST"])
 def load():
     jdoc = request.json
+    # print(json.dumps(jdoc))
     with db:
         with db.cursor() as csr:
-            csr.execute(
+            
                 activity_sql,
                 (
                     jdoc["name"],
-                    jdoc["profileTicks"],
-                    jdoc["actualTicks"],
-                    jdoc["actualDistance"],
+                    jdoc["activityMeasures"],
+                    jdoc["activityData"],
+                    jdoc["traceMeasures"],
                     json.dumps(jdoc["meta"]),
                 ),
             )
             activity_id = csr.fetchone()[0]
 
-            for item in jdoc["data"]:
-                csr.execute(data_sql, (activity_id,) + tuple(item))
+            for item in jdoc["traceData"]:
+                csr.execute(data_sql, (activity_id, item.pop(0), item))
 
     return "OK - {:d}".format(activity_id)
 

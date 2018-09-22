@@ -8,6 +8,7 @@ data class Activity(
     val activityMeasures: List<String> = listOf("profile_ticks", "actual_ticks", "actual_distance"),
     val activityData: MutableList<Double> = mutableListOf(),
     val traceMeasures: List<String> = listOf(
+        "millis",
         "profile_acc",
         "profile_vel",
         "profile_ticks",

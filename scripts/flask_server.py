@@ -24,13 +24,13 @@ def load():
     # print(json.dumps(jdoc))
     with db:
         with db.cursor() as csr:
-            
+            csr.execute(
                 activity_sql,
                 (
                     jdoc["name"],
                     jdoc["activityMeasures"],
                     jdoc["activityData"],
-                    jdoc["traceMeasures"],
+                    jdoc["traceMeasures"][1:], # remove millis, inserted separately below: item.pop(0)
                     json.dumps(jdoc["meta"]),
                 ),
             )

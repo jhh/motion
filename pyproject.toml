@@ -15,6 +15,7 @@ simple-pid = "^1.0.0"
 more-itertools = "^8.7.0"
 pandas = "^1.2.4"
 robotpy = "^2021.2.0"
+requests = "^2.25.1"
 
 [tool.poetry.dev-dependencies]
 black = "^20.8b1"

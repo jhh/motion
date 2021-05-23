@@ -1,0 +1,53 @@
+{
+  "type": "start",
+  "subscription": [
+    {
+      "itemId": 6,
+      "measurementId": "CLOSED_LOOP_TARGET"
+    },
+    {
+      "itemId": 6,
+      "measurementId": "OUTPUT_VOLTAGE"
+    },
+    {
+      "itemId": 6,
+      "measurementId": "SELECTED_SENSOR_VELOCITY"
+    },
+    {
+      "itemId": 7,
+      "measurementId": "CLOSED_LOOP_TARGET"
+    },
+    {
+      "itemId": 7,
+      "measurementId": "OUTPUT_VOLTAGE"
+    },
+    {
+      "itemId": 7,
+      "measurementId": "SELECTED_SENSOR_VELOCITY"
+    },
+    {
+      "itemId": 8,
+      "measurementId": "CLOSED_LOOP_TARGET"
+    },
+    {
+      "itemId": 8,
+      "measurementId": "OUTPUT_VOLTAGE"
+    },
+    {
+      "itemId": 8,
+      "measurementId": "SELECTED_SENSOR_VELOCITY"
+    },
+    {
+      "itemId": 9,
+      "measurementId": "CLOSED_LOOP_TARGET"
+    },
+    {
+      "itemId": 9,
+      "measurementId": "OUTPUT_VOLTAGE"
+    },
+    {
+      "itemId": 9,
+      "measurementId": "SELECTED_SENSOR_VELOCITY"
+    }
+  ]
+}

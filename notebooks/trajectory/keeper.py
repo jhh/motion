@@ -8,6 +8,18 @@ from pathlib import Path
 import pickle
 
 
+class Activity:
+    def __init__(self, url: str) -> None:
+        r = requests.get(url)
+        activity = r.json()
+
+        self.id = activity["id"]
+        self.name = activity["name"]
+        self.meta = activity["meta"]
+        self.description = activity["meta"]["description"]
+        self.actions = activity["actions"]
+
+
 class Action:
     def __init__(self, url: str) -> None:
         r = requests.get(url)
@@ -21,7 +33,7 @@ class Action:
         self.name = action["name"]
         self.meta = action["meta"]
         self.description = action["meta"]["description"]
-        self.version = action["meta"]["version"]
+        # self.version = action["meta"]["version"]
         self.created_at = datetime.strptime(
             action["created_at"], "%Y-%m-%dT%H:%M:%S.%f%z"
         ).astimezone(pytz.timezone("US/Eastern"))

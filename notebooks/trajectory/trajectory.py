@@ -250,6 +250,9 @@ class TrajectoryTelemetry(Telemetry):
 
         self.df['hc_omega'] = self.df['hc_omega'] * -1
         self.df['traj_time'] = self.df['traj_time'] * 1000 # sec to msec
+        self.df['x_error'] = self.df['odom_x'] - self.df['traj_x']
+        self.df['y_error'] = self.df['odom_y'] - self.df['traj_y']
+
         
         self.drive_cpr = kwargs.get("drive_cpr", 2048)
         self.drive_gear_ratio = kwargs.get(
@@ -298,6 +301,20 @@ class TrajectoryTelemetry(Telemetry):
         ax.grid()
         ax.set_ylabel("meters")
         ax.set_xlabel("meters")
+
+    def plot_error(self, interval=pd.Series(dtype="boolean"), ax=None):
+        if interval.empty:
+            interval = self.interval
+
+        if ax == None:
+            _, ax = plt.subplots()
+
+        self.df[interval].plot(x='timestamp', y='x_error', ax=ax, label='x error')
+        self.df[interval].plot(x='timestamp', y='y_error', ax=ax, label='y error')
+        ax.grid()
+        ax.set_ylabel("meters")
+        ax.set_xlabel("milliseconds")
+
 
     def _drive_mps(self, counts_100ms):
         motor_rot_100ms = counts_100ms / self.drive_cpr
@@ -374,11 +391,11 @@ class TrajectoryTelemetry(Telemetry):
                 alpha=0.1,
             )
 
-        if drive and controller:
+        if setpoint and drive:
             ax.fill_between(
                 self.df[interval]["timestamp"],
                 drive_mps[interval],
-                hc_vel,
+                setpoint_mps[interval],
                 color="purple",
                 alpha=0.1,
             )

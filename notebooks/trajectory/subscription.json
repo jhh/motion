@@ -1,0 +1,73 @@
+{
+  "type": "start",
+  "subscription": [
+    {
+      "itemId": 0,
+      "measurementId": "Traj. X"
+    },
+    {
+      "itemId": 0,
+      "measurementId": "Traj. Y"
+    },
+    {
+      "itemId": 0,
+      "measurementId": "Traj. Vel"
+    },
+    {
+      "itemId": 0,
+      "measurementId": "Traj. Accel"
+    },
+    {
+      "itemId": 0,
+      "measurementId": "Traj. Degrees"
+    },
+    {
+      "itemId": 0,
+      "measurementId": "Traj. Time"
+    },
+    {
+      "itemId": 0,
+      "measurementId": "HC Vy"
+    },
+    {
+      "itemId": 0,
+      "measurementId": "HC Vx"
+    },
+    {
+      "itemId": 0,
+      "measurementId": "HC Omega"
+    },
+    {
+      "itemId": 1,
+      "measurementId": "Odometry X"
+    },
+    {
+      "itemId": 1,
+      "measurementId": "Odometry Y"
+    },
+    {
+      "itemId": 1,
+      "measurementId": "Gyro Rotation2d (deg)"
+    },
+    {
+      "itemId": 1,
+      "measurementId": "Odometry Rotation2d (deg)"
+    },
+    {
+      "itemId": 6,
+      "measurementId": "CLOSED_LOOP_TARGET"
+    },
+    {
+      "itemId": 7,
+      "measurementId": "CLOSED_LOOP_TARGET"
+    },
+    {
+      "itemId": 8,
+      "measurementId": "CLOSED_LOOP_TARGET"
+    },
+    {
+      "itemId": 9,
+      "measurementId": "CLOSED_LOOP_TARGET"
+    }
+  ]
+}

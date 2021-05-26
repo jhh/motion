@@ -1,0 +1,328 @@
+{
+    "items": [
+        {
+            "id": 0,
+            "type": "frc.robot.commands.DriveTrajectoryCommand",
+            "description": "Trajectory Command"
+        },
+        {
+            "id": 1,
+            "type": "frc.robot.subsystems.DriveSubsystem",
+            "description": "DriveSubsystem"
+        },
+        {
+            "id": 2,
+            "type": "org.strykeforce.telemetry.measurable.TalonSRXMeasurable",
+            "description": "TalonSRX 0"
+        },
+        {
+            "id": 3,
+            "type": "org.strykeforce.telemetry.measurable.TalonSRXMeasurable",
+            "description": "TalonSRX 1"
+        },
+        {
+            "id": 4,
+            "type": "org.strykeforce.telemetry.measurable.TalonSRXMeasurable",
+            "description": "TalonSRX 2"
+        },
+        {
+            "id": 5,
+            "type": "org.strykeforce.telemetry.measurable.TalonSRXMeasurable",
+            "description": "TalonSRX 3"
+        },
+        {
+            "id": 6,
+            "type": "org.strykeforce.thirdcoast.talon.TalonFXMeasurable",
+            "description": "TalonFX 10"
+        },
+        {
+            "id": 7,
+            "type": "org.strykeforce.thirdcoast.talon.TalonFXMeasurable",
+            "description": "TalonFX 11"
+        },
+        {
+            "id": 8,
+            "type": "org.strykeforce.thirdcoast.talon.TalonFXMeasurable",
+            "description": "TalonFX 12"
+        },
+        {
+            "id": 9,
+            "type": "org.strykeforce.thirdcoast.talon.TalonFXMeasurable",
+            "description": "TalonFX 13"
+        }
+    ],
+    "measures": [
+        {
+            "deviceType": "frc.robot.commands.DriveTrajectoryCommand",
+            "deviceMeasures": [
+                {
+                    "id": "Traj. Degrees",
+                    "description": "Traj. Degrees"
+                },
+                {
+                    "id": "HC Vy",
+                    "description": "HC Vy"
+                },
+                {
+                    "id": "Traj. Curvature",
+                    "description": "Traj. Curvature"
+                },
+                {
+                    "id": "Traj. Accel",
+                    "description": "Traj. Accel"
+                },
+                {
+                    "id": "Traj. Time",
+                    "description": "Traj. Time"
+                },
+                {
+                    "id": "HC Vx",
+                    "description": "HC Vx"
+                },
+                {
+                    "id": "HC Omega",
+                    "description": "HC Omega"
+                },
+                {
+                    "id": "Traj. Vel",
+                    "description": "Traj. Vel"
+                },
+                {
+                    "id": "Traj. Y",
+                    "description": "Traj. Y"
+                },
+                {
+                    "id": "Traj. X",
+                    "description": "Traj. X"
+                }
+            ]
+        },
+        {
+            "deviceType": "frc.robot.subsystems.DriveSubsystem",
+            "deviceMeasures": [
+                {
+                    "id": "Gyro Angle (deg)",
+                    "description": "Gyro Angle (deg)"
+                },
+                {
+                    "id": "Odometry X",
+                    "description": "Odometry X"
+                },
+                {
+                    "id": "Gyro Rotation2d (deg)",
+                    "description": "Gyro Rotation2d (deg)"
+                },
+                {
+                    "id": "Odometry Y",
+                    "description": "Odometry Y"
+                },
+                {
+                    "id": "Odometry Rotation2d (deg)",
+                    "description": "Odometry Rotation2d (deg)"
+                }
+            ]
+        },
+        {
+            "deviceType": "org.strykeforce.telemetry.measurable.TalonSRXMeasurable",
+            "deviceMeasures": [
+                {
+                    "id": "CLOSED_LOOP_TARGET",
+                    "description": "Closed-loop Setpoint (PID 0)"
+                },
+                {
+                    "id": "STATOR_CURRENT",
+                    "description": "Stator Current"
+                },
+                {
+                    "id": "SUPPLY_CURRENT",
+                    "description": "Supply Current"
+                },
+                {
+                    "id": "OUTPUT_VOLTAGE",
+                    "description": "Output Voltage"
+                },
+                {
+                    "id": "OUTPUT_PERCENT",
+                    "description": "Output Percentage"
+                },
+                {
+                    "id": "SELECTED_SENSOR_POSITION",
+                    "description": "Selected Sensor Position (PID 0)"
+                },
+                {
+                    "id": "SELECTED_SENSOR_VELOCITY",
+                    "description": "Selected Sensor Velocity (PID 0)"
+                },
+                {
+                    "id": "ACTIVE_TRAJECTORY_POSITION",
+                    "description": "Active Trajectory Position"
+                },
+                {
+                    "id": "ACTIVE_TRAJECTORY_VELOCITY",
+                    "description": "Active Trajectory Velocity"
+                },
+                {
+                    "id": "CLOSED_LOOP_ERROR",
+                    "description": "Closed Loop Error (PID 0)"
+                },
+                {
+                    "id": "BUS_VOLTAGE",
+                    "description": "Bus Voltage"
+                },
+                {
+                    "id": "ERROR_DERIVATIVE",
+                    "description": "Error Derivative (PID 0)"
+                },
+                {
+                    "id": "INTEGRAL_ACCUMULATOR",
+                    "description": "Integral Accumulator (PID 0)"
+                },
+                {
+                    "id": "ANALOG_IN",
+                    "description": "Analog Position Input"
+                },
+                {
+                    "id": "ANALOG_IN_RAW",
+                    "description": "Analog Raw Input"
+                },
+                {
+                    "id": "ANALOG_IN_VELOCITY",
+                    "description": "Analog Velocity Input"
+                },
+                {
+                    "id": "QUAD_A_PIN",
+                    "description": "Quad A Pin State"
+                },
+                {
+                    "id": "QUAD_B_PIN",
+                    "description": "Quad B Pin State"
+                },
+                {
+                    "id": "QUAD_IDX_PIN",
+                    "description": "Quad Index Pin State"
+                },
+                {
+                    "id": "QUAD_POSITION",
+                    "description": "Quad Position"
+                },
+                {
+                    "id": "QUAD_VELOCITY",
+                    "description": "Quad Velocity"
+                },
+                {
+                    "id": "PULSE_WIDTH_POSITION",
+                    "description": "Pulse Width Position"
+                },
+                {
+                    "id": "PULSE_WIDTH_VELOCITY",
+                    "description": "Pulse Width Velocity"
+                },
+                {
+                    "id": "PULSE_WIDTH_RISE_TO_FALL",
+                    "description": "PWM Pulse Width"
+                },
+                {
+                    "id": "PULSE_WIDTH_RISE_TO_RISE",
+                    "description": "PWM Period"
+                },
+                {
+                    "id": "FORWARD_LIMIT_SWITCH_CLOSED",
+                    "description": "Forward Limit Switch Closed"
+                },
+                {
+                    "id": "REVERSE_LIMIT_SWITCH_CLOSED",
+                    "description": "Reverse Limit Switch Closed"
+                },
+                {
+                    "id": "TEMPERATURE",
+                    "description": "Controller Temperature"
+                }
+            ]
+        },
+        {
+            "deviceType": "org.strykeforce.thirdcoast.talon.TalonFXMeasurable",
+            "deviceMeasures": [
+                {
+                    "id": "CLOSED_LOOP_TARGET",
+                    "description": "Closed-loop Setpoint (PID 0)"
+                },
+                {
+                    "id": "STATOR_CURRENT",
+                    "description": "Stator Current"
+                },
+                {
+                    "id": "SUPPLY_CURRENT",
+                    "description": "Supply Current"
+                },
+                {
+                    "id": "OUTPUT_VOLTAGE",
+                    "description": "Output Voltage"
+                },
+                {
+                    "id": "OUTPUT_PERCENT",
+                    "description": "Output Percent"
+                },
+                {
+                    "id": "INTEGRATED_SENSOR_POSITION",
+                    "description": "Integrated Sensor Position"
+                },
+                {
+                    "id": "INTEGRATED_SENSOR_ABSOLUTE_POSITION",
+                    "description": "Integrated Sensor Abs. Position"
+                },
+                {
+                    "id": "INTEGRATED_SENSOR_VELOCITY",
+                    "description": "Integrated Sensor Velocity"
+                },
+                {
+                    "id": "SELECTED_SENSOR_POSITION",
+                    "description": "Selected Sensor Position"
+                },
+                {
+                    "id": "SELECTED_SENSOR_VELOCITY",
+                    "description": "Selected Sensor Velocity"
+                },
+                {
+                    "id": "ACTIVE_TRAJECTORY_POSITION",
+                    "description": "Active Trajectory Position"
+                },
+                {
+                    "id": "ACTIVE_TRAJECTORY_VELOCITY",
+                    "description": "Active Trajectory Velocity"
+                },
+                {
+                    "id": "ACTIVE_TRAJECTORY_ARB_FEED_FWD",
+                    "description": "Active Trajectory Arb. Feed FWD"
+                },
+                {
+                    "id": "CLOSED_LOOP_ERROR",
+                    "description": "Closed Loop Error (PID 0)"
+                },
+                {
+                    "id": "BUS_VOLTAGE",
+                    "description": "Bus Voltage"
+                },
+                {
+                    "id": "ERROR_DERIVATIVE",
+                    "description": "Error Derivative (PID 0)"
+                },
+                {
+                    "id": "INTEGRAL_ACCUMULATOR",
+                    "description": "Integral Accumulator (PID 0)"
+                },
+                {
+                    "id": "FORWARD_LIMIT_SWITCH_CLOSED",
+                    "description": "Forward Limit Switch Closed"
+                },
+                {
+                    "id": "REVERSE_LIMIT_SWITCH_CLOSED",
+                    "description": "Reverse Limit Switch Closed"
+                },
+                {
+                    "id": "TEMPERATURE",
+                    "description": "Controller Temperature"
+                }
+            ]
+        }
+    ]
+}

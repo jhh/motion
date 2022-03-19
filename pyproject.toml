@@ -6,16 +6,15 @@ authors = ["Jeff Hutchison <jeff@jeffhutchison.com>"]
 license = "MIT"
 
 [tool.poetry.dependencies]
-python = "^3.9"
-robotpy-wpimath = "^2021"
+python = "^3.10.1"
 jupyter = "^1.0.0"
 matplotlib = "^3.4.1"
 ipympl = "^0.7.0"
 simple-pid = "^1.0.0"
 more-itertools = "^8.7.0"
 pandas = "^1.2.4"
-robotpy = "^2021"
 requests = "^2.25.1"
+robotpy-wpimath = "^2022.4.1"
 
 [tool.poetry.dev-dependencies]
 black = "^20.8b1"

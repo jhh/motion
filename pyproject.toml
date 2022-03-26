@@ -6,7 +6,7 @@ authors = ["Jeff Hutchison <jeff@jeffhutchison.com>"]
 license = "MIT"
 
 [tool.poetry.dependencies]
-python = "^3.10.1"
+python = "~3.10.3"
 jupyter = "^1.0.0"
 matplotlib = "^3.4.1"
 ipympl = "^0.7.0"

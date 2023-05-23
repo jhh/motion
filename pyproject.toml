@@ -13,7 +13,7 @@ ipympl = "^0.7.0"
 simple-pid = "^1.0.0"
 more-itertools = "^8.7.0"
 pandas = "^1.2.4"
-requests = "^2.25.1"
+requests = "^2.31.0"
 robotpy-wpimath = "^2022.4.1"
 tomli = "^2.0.1"
 
